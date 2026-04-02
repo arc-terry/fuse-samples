@@ -9,13 +9,19 @@ Reading that file executes `whoami` and returns the command output as file conte
 ## Files
 
 - `whoami_fuse.c`: FUSE implementation
-- `whoami_fuse`: compiled binary
-- `test/`: extra test artifacts for this demo
+- `Makefile`: local build and cleanup commands
+- `whoami_fuse`: generated binary after `make`
 
 ## Build
 
 ```bash
-gcc whoami_fuse.c -o whoami_fuse $(pkg-config fuse3 --cflags --libs)
+make
+```
+
+## Clean
+
+```bash
+make clean
 ```
 
 ## Run

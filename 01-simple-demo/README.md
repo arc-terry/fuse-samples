@@ -13,12 +13,19 @@ Hello from FUSE on WSL2!
 ## Files
 
 - `hello_fuse.c`: FUSE implementation
-- `hello_fuse`: compiled binary
+- `Makefile`: local build and cleanup commands
+- `hello_fuse`: generated binary after `make`
 
 ## Build
 
 ```bash
-gcc hello_fuse.c -o hello_fuse $(pkg-config fuse3 --cflags --libs)
+make
+```
+
+## Clean
+
+```bash
+make clean
 ```
 
 ## Run
