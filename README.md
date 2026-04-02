@@ -22,6 +22,12 @@ A read-only filesystem demo that exposes three files and runs `whoami` on each r
 
 See [03-multi-node-demo/README.md](03-multi-node-demo/README.md) for build and run details.
 
+### `04-nested-node-demo`
+
+A read-only filesystem demo with nested folders under `/mcu/sensor`, where each `version` node runs `whoami` and reports which nested node was triggered.
+
+See [04-nested-node-demo/README.md](04-nested-node-demo/README.md) for build and run details.
+
 ## Prerequisites
 
 - `gcc`
