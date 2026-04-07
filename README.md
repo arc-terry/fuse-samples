@@ -28,6 +28,12 @@ A read-only filesystem demo with nested folders under `/mcu/sensor`, where each 
 
 See [04-nested-node-demo/README.md](04-nested-node-demo/README.md) for build and run details.
 
+### `05-extended-nested-node-demo`
+
+A read-only filesystem demo that extends the nested node layout with `/mcu/version`, executes `ls /root` for `/mcu/version`, and executes `whoami` for `/mcu/sensor/*/version` using `pipe` + `fork` + `execvp`.
+
+See [05-extended-nested-node-demo/README.md](05-extended-nested-node-demo/README.md) for build and run details.
+
 ## Prerequisites
 
 - `gcc`
